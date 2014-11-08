@@ -1,0 +1,36 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.26",
+    "angular-route": "1.2.26",
+    "angular-loader": "1.2.26",
+    "angular-mocks": "1.2.26",
+    "angular-resource": "1.2.26",
+    "angular-sanitize": "1.2.26",
+    "jquery": "1.8.2",
+    "moment": "2.6.0",
+    "html5-boilerplate": "~4.3.0",
+    "bootstrap": "3.1.1",
+    "sinonjs": "1.10.2"
+  },
+  "authors": [
+    "Steve Henry <stevehenry3@hotmail.com>"
+  ],
+  "description": "angular seed project",
+  "license": "None",
+  "private": true,
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "app/bower_components",
+      "vendor"
+  ],
+  "resolutions": {
+    "jquery": "1.8.2"
+  }
+}

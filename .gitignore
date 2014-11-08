@@ -1,0 +1,19 @@
+logs
+tmp
+.idea/
+.idea_modules/
+.settings/
+*.log
+RUNNING_PID
+angular-tests/karma_html/
+
+# NPM and Bower includes as well as Grunt built things
+node_modules/
+bower_components/
+npm-debug.log
+
+# Karma output
+client/karma-test-results.xml
+karma-test-results.xml
+/.cache
+coverage/
