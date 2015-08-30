@@ -23,21 +23,13 @@ npm install -g bower
 ```
 
 ```shell
-npm install -g express
-```
-
-```shell
 npm install -g requirejs
 ```
 
 ```shell
-npm install -g ejs
+# This will make gulp available from the command line (used as a task runner)
+npm install -g gulp@3.9.0
 ```
-
-```shell
-npm install -g nodemon
-```
-
 
 ### Install Project NPM Dependencies
 (from the root folder of this project, run in command line:)
@@ -51,15 +43,16 @@ npm install
 (from the root folder of this project, run in command line:)
 
 ```shell
+# Ensure you are in the ROOT folder of the project!
+# NOTE: `.bowerrc` file points to the location of the `bower_components` folder
 bower install
 ```
 
 
 ### Run Node Server
-(from the root folder of this project, run in command line:)
-
 ```shell
-node app/index.js
+# Run from the root folder of this project:
+node src/node_server/index.js
 ```
 
 
