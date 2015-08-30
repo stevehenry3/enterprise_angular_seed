@@ -1,9 +1,9 @@
 {
   "name": "angular-seed",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "version": "0.2.0",
+  "description": "An enterprise-ready seed project for Angular, Gulp, SASS",
+  "repository": "https://github.com/stevehenry3/enterprise_angular_seed",
   "license": "MIT",
   "devDependencies": {
     "karma": "0.13.9",
