@@ -6,6 +6,7 @@ tmp
 *.log
 RUNNING_PID
 angular-tests/karma_html/
+build/
 
 # NPM and Bower includes as well as Grunt built things
 node_modules/

@@ -31,6 +31,11 @@ npm install -g requirejs
 npm install -g gulp@3.9.0
 ```
 
+```shell
+# Only needed if NodeJS used. Watches for changes in Node server files, and auto-restarts server.
+npm install -g nodemon@1.4.1
+```
+
 ### Install Project NPM Dependencies
 (from the root folder of this project, run in command line:)
 

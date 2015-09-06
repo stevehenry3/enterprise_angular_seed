@@ -7,6 +7,7 @@ var path = require('path');
 var _ = require('lodash');
 var runSequence = require('gulp-run-sequence');
 var $ = require('gulp-load-plugins')({lazy: true});
+var notifier = require('node-notifier');
 var port = process.env.PORT || config.defaultPort;
 
 gulp.task('help', $.taskListing);
@@ -434,7 +435,7 @@ gulp.task('autotest', ['vet', 'templatecache'], function(done) {
     startTests(false /* singleRun */, done);
 });
 
-////////////
+//////////// functions /////////////
 
 function serve(isDev, specRunner) {
     var nodeOptions = {
@@ -474,7 +475,6 @@ function changeEvent(event) {
 }
 
 function notify(options) {
-    var notifier = require('node-notifier');
     var notifyOptions = {
         sound: 'Bottle',
         contentImage: path.join(__dirname, 'gulp.png'),

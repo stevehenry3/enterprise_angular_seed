@@ -5,11 +5,11 @@ var app = express();
 
 //app.set("view options", {layout: false});
 app.engine('html', require('ejs').renderFile);
-app.set('views', path.join(__dirname, './'));
+app.set('views', path.join(__dirname, '../../build'));
 app.use(express.static(path.join(__dirname, './')));
 
 app.get('/', function(req, res) {
-	res.render("index.html");
+	res.render('index.html');
 	
 });
 
