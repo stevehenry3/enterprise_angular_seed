@@ -8,6 +8,7 @@ var _ = require('lodash');
 var runSequence = require('gulp-run-sequence');
 var $ = require('gulp-load-plugins')({lazy: true});
 var notifier = require('node-notifier');
+var nodeMonitor = require('nodemon');
 var port = process.env.PORT || config.defaultPort;
 
 gulp.task('help', $.taskListing);
@@ -423,9 +424,14 @@ gulp.task('serve-build', ['build'], function() {
     serve(false /* isDev */);
 });
 
-gulp.task('serve-dev', ['inject'], function() {
+//TODO: (SH) changed this method to call dev-build task
+gulp.task('serve-dev', ['dev-build'], function() {
     serve(true /* isDev */);
 });
+
+//gulp.task('serve-dev', ['inject'], function() {
+//    serve(true /* isDev */);
+//});
 
 gulp.task('test', ['vet', 'templatecache'], function(done) {
     startTests(true /* singleRun */, done);
@@ -448,7 +454,7 @@ function serve(isDev, specRunner) {
         watch: [config.server]
     };
 
-    return $.nodemon(nodeOptions)
+    return nodeMonitor(nodeOptions)
         .on('restart', function(ev) {
             log('*** nodemon restarted');
             log('files changed on restart:\n' + ev);

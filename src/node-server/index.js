@@ -1,5 +1,6 @@
 var express = require('express'),
 	path = require('path');
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -18,4 +19,8 @@ app.get('/api/customer', function(req, res) {
 	res.send(cus);
 });
 
-app.listen(3000);
+app.listen(port, function() {
+	console.log('Express server listening on port ' + port);
+	console.log('\n__dirname = ' + __dirname +
+	'\nprocess.cwd = ' + process.cwd());
+});
