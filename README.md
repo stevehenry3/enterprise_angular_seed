@@ -65,6 +65,11 @@ gulp dev-build
 
 ```shell
 # To run the project in DEV mode (watching for changes):
+# Need to set an environment variable to proxy between BrowserSync and Express
+# Windows:
+set PORT=5111
+# Linux/Mac:
+export PORT=5111
 # In command window 1 (watches for Angular file changes, and triggers gulp tasks):
 gulp dev-watch
 # In command window 2 (watches for Node file changes, and re-launches the server).

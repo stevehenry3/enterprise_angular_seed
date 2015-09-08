@@ -32,16 +32,29 @@
     <!-- endinject -->
     <!-- endbuild -->
 
-<ul class="menu">
-    <li><a href="#/main">main</a></li>
-    <li><a href="#/sample">sample</a></li>
-</ul>
-
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div ng-view></div>
+    <div class="brand">Sample Website</div>
+
+    <div class="address-bar">123 Address Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+
+    <!-- Navigation -->
+    <ma-main-navbar>
+    </ma-main-navbar>
+
+    <div ng-view></div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Steve Henry 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
