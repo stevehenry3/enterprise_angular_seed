@@ -37,15 +37,14 @@ npm install -g nodemon@1.4.1
 ```
 
 ### Install Project NPM Dependencies
-(from the root folder of this project, run in command line:)
 
 ```shell
+# Run from the ROOT folder of the project
 npm install
 ``` 
 
 
 ### Install Project Bower Dependencies
-(from the root folder of this project, run in command line:)
 
 ```shell
 # Ensure you are in the ROOT folder of the project!
@@ -53,10 +52,27 @@ npm install
 bower install
 ```
 
+### Build The Project
+
+```shell
+# Run from the ROOT folder of the project.
+# This will copy/build all the project files to `./build/`
+gulp dev-build
+```
+
 
 ### Run Node Server
+
 ```shell
-# Run from the root folder of this project:
+# To run the project in DEV mode (watching for changes):
+# In command window 1 (watches for Angular file changes, and triggers gulp tasks):
+gulp dev-watch
+# In command window 2 (watches for Node file changes, and re-launches the server).
+# (Also serves up the project to a web browser)
+gulp serve-dev
+
+# --OR--
+# To run the project in PROD mode (just serves it up to browser):
 node src/node_server/index.js
 ```
 
