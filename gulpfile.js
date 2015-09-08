@@ -189,7 +189,7 @@ gulp.task('dev-wiredep', function() {
 });
 
 gulp.task('dev-styles', ['dev-clean-styles'], function() {
-    log('<dev-styles> Compiling SCSS --> CSS and outputting to folder: ' + config.outputStyles);
+    log('<dev-styles> Compiling SCSS --> CSS from: {' + config.scss + '} and outputting to folder: ' + config.outputStyles);
 
     return gulp
         .src(config.scss)
