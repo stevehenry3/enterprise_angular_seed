@@ -10,6 +10,7 @@ app.set('views', path.join(__dirname, '../../build'));
 app.use(express.static(path.join(__dirname, '../../build')));
 app.use(express.static(path.join(__dirname, '../../build/js')));
 app.use(express.static(path.join(__dirname, '../../build/templates')));
+app.use(express.static(path.join(__dirname, '../../build/assets')));
 
 app.get('/', function(req, res) {
 	res.render('index.html');
